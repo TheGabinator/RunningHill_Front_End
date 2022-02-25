@@ -1,0 +1,114 @@
+.App {
+  background-color: #e6dfdf;
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.header{
+  text-align: center;
+  min-height: 8rem;
+  border-bottom: #282c34 solid 2px;
+  padding-bottom: 5px;
+}
+
+.wordtype{
+  border: 1px solid rgb(172, 169, 169);
+  border-radius: 25%;
+  display: inline;
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
+  
+}
+
+.wordbody{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  min-height: 45rem;
+}
+
+.leftsection{
+  padding: 0.5rem;
+  border-right: solid 1px rgb(172, 169, 169);
+}
+
+.mainsection{
+  padding: 0.5rem;
+}
+
+.allsentence{
+  border-bottom: rgb(172, 169, 169) 1px solid;
+}
+
+.newsentence{
+  width: 60%;
+  font-size: 1.3rem;
+}
+
+.savebutton{
+  font-size: 1.3rem;
+}
+
+.status{
+  color: red;
+}
+
+
+.wordtype:hover{
+  text-decoration: underline;
+}
+
+.displayedsentences{
+  padding: 2rem;
+  font-size: 1.3rem;
+  color: #30436b;
+}
+
+.wordtypeheader{
+  font-size: 1.3rem;
+  color: #4e5053;
+}
+
+.wordtypelist{
+  font-size: 1.3rem;
+  color: #682b2b;
+}
+
+.selectedwords{
+  color: #282c34;
+  text-decoration: none;
+}
+.selectedwords:hover{
+  text-decoration: underline;  
+  cursor: pointer;
+}
+
+@media(max-width: 500px){
+
+  .wordbody{
+    display: block;
+    min-height: 45rem;
+  }
+  
+  .wordtype{
+    border: 1px solid rgb(172, 169, 169);
+    border-radius: 25%;
+    display: block;
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;    
+  }
+
+  .wordtypeheader{
+    display: block;
+    font-size: 1.3rem;
+    color: #534e4e;
+  }
+
+}
+
+
